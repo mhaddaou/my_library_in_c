@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: psychom <psychom@student.42.fr>            +#+  +:+       +#+         #
+#    By: mhaddaou <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/01/19 14:36:03 by mhaddaou          #+#    #+#              #
-#    Updated: 2022/04/25 16:26:32 by psychom          ###   ########.fr        #
+#    Updated: 2022/04/25 17:28:05 by mhaddaou         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,6 +21,7 @@ all:
 	@cd libft && make all
 	@cd ft_printf && make all
 	@ar rcs $(NAME) $(OBJECTS) libft/*.o ft_printf/*.o
+	@gcc root13.c library.a -o Root13
 
 clean:
 	@rm -f $(OBJECTS)
@@ -31,5 +32,9 @@ fclean: clean
 	@rm -f $(NAME)
 	@cd libft && make fclean
 	@cd ft_printf && make fclean
+	@rm Root13
 
 re: fclean all
+
+
+	
