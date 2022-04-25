@@ -3,18 +3,18 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: mhaddaou <mhaddaou@student.42.fr>          +#+  +:+       +#+         #
+#    By: psychom <psychom@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/01/19 14:36:03 by mhaddaou          #+#    #+#              #
-#    Updated: 2022/02/27 00:06:20 by mhaddaou         ###   ########.fr        #
+#    Updated: 2022/04/25 01:02:53 by psychom          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = "library.a"
 
-FILES = ft_putchar.c ft_putnbr.c ft_putstr.c ft_to_dic.c
+FILES = ft_putchar.c ft_putnbr.c ft_putstr.c ft_to_dic.c push.c
 
-OBJECTS = ft_putchar.o ft_putnbr.o ft_putstr.o ft_to_dic.o
+OBJECTS = ft_putchar.o ft_putnbr.o ft_putstr.o ft_to_dic.o push.o
 
 all:
 	@gcc -c -Wall -Wextra -Werror $(FILES)

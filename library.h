@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   library.h                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mhaddaou <mhaddaou@student.42.fr>          +#+  +:+       +#+        */
+/*   By: psychom <psychom@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/19 10:52:17 by mhaddaou          #+#    #+#             */
-/*   Updated: 2022/02/27 00:08:05 by mhaddaou         ###   ########.fr       */
+/*   Updated: 2022/04/25 01:02:25 by psychom          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,5 +21,6 @@ int		ft_change_char_to_deci(const char *str);
 void	ft_putchar(char c);
 void	ft_putstr(char *str);
 void	ft_putnbr(int n);
+char    **push(char **s1, char *s2);
 
 #endif
